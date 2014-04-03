@@ -1,0 +1,26 @@
+We're going to pursue a bottom-up approach. We're not using an
+existing implementation of our implementation language (Scheme), thus
+we can't write the system directly in Scheme. Instead we're following
+this approach:
+
+ 1. create a virtual machine, written in either Rust[1] or ATS[2],
+    that offers a low level language in which we're going to write our
+    first higher level manually.
+
+    1.1. define the virtual machine language ("VML"). It will be
+         something between assembly and continuation-passing style
+         lambda calculus.
+
+    1.2. write a parser, code and runtime data representation and
+         interpreter for it in Rust or ATS. Also provide for a garbage
+         collection system.
+
+ 2. write an S-Expr parser in VML. Write source code transformation
+    from Scheme to VML, including a simple macro implementation.
+
+ 3. write the rest of the system in Scheme (possibly rewrite 2 in
+    Scheme, too).
+
+[1] https://en.wikipedia.org/wiki/Rust_(programming_language)
+[2] https://en.wikipedia.org/wiki/ATS_(programming_language)
+
