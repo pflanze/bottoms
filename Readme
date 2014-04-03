@@ -7,9 +7,11 @@ system written in Scheme.
 The aim is to learn how to build a programming language implementation
 from scratch. A secondary aim is to learn how to achieve a result that
 is fully secure, or learn what's missing in capabilities to do so
-(security meaning that through modification of program inputs the
-system cannot be led into an undefined state, that separate programs
-running on the same system cannot influence each other in different
-than predetermined ways, and that facilities are there for program
-writers to handle I/O deterministically). We'll try to avoid major
-performance pitfalls but performance is not one of the primary aims.
+(security meaning that through either modification of program inputs
+or by normal programs (excluding debugging facilities) the system
+cannot be brought into an undefined state (it will either be in a
+defined state, or stops with an error), that separate programs running
+on the same system cannot influence each other in other than
+predetermined ways, and that facilities are there for program writers
+to handle I/O deterministically). We'll try to avoid major performance
+pitfalls but performance is not one of the primary aims.
