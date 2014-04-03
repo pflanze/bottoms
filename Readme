@@ -1,0 +1,15 @@
+This is an attempt at creating an implementation of the Scheme
+programming language. The aim is to do so from scratch, in the sense
+of not using an existing Scheme implementation as part of its
+upbringing, but in the end have at least the higher levels of the
+system written in Scheme.
+
+The aim is to learn how to build a programming language implementation
+from scratch. A secondary aim is to learn how to achieve a result that
+is fully secure, or learn what's missing in capabilities to do so
+(security meaning that through modification of program inputs the
+system cannot be led into an undefined state, that separate programs
+running on the same system cannot influence each other in different
+than predetermined ways, and that facilities are there for program
+writers to handle I/O deterministically). We'll try to avoid major
+performance pitfalls but performance is not one of the primary aims.
